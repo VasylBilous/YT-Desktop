@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtube Desktop", "Youtube Desktop\Youtube Desktop.csproj", "{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{AD7C66FA-5882-4598-B50C-89DE85E1356C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Debug|x64.ActiveCfg = Debug|x64
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Debug|x64.Build.0 = Debug|x64
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Release|x64.ActiveCfg = Release|x64
+		{4311BB04-6693-4050-9D4C-C3BEE7DF7F5B}.Release|x64.Build.0 = Release|x64
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Debug|x64.Build.0 = Debug|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C5AADC1-C16D-47CD-8FD5-BD0535B3D377}.Release|x64.Build.0 = Release|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD7C66FA-5882-4598-B50C-89DE85E1356C}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF34F11E-2D27-492F-AC1F-73D3449A3F2D}
+	EndGlobalSection
+EndGlobal

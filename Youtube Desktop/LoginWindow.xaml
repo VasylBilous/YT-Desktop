@@ -1,0 +1,40 @@
+﻿<Window x:Class="Youtube_Desktop.LoginWindow"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Youtube_Desktop" 
+        xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="Youbute" Height="310" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <icons:PackIconSimpleIcons  Kind="YouTubeTv"  Width="50" Height="50"  HorizontalAlignment="Center"  Foreground="Red"/>
+        <TextBox  Margin="5" Grid.Row="1" x:Name="tbInfo" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2" Text="{Binding Info, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"/>
+        <Label  Margin="137,8,123.073,8" Content="Enter E-mail:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox  Margin="5" Grid.Row="3" x:Name="tbLogin" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label  Margin="127,8,113.073,8" Content="Enter password:" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <PasswordBox PasswordChar="*"  Margin="5" Grid.Row="5" x:Name="tbPassword" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2" PasswordChanged="tbPassword_PasswordChanged"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="6">
+            <Button Margin="10" Height="25" Width="40" x:Name="btnBack" Content="back" HorizontalContentAlignment="Center" BorderThickness="0"  Click="btnBack_Click"/>
+            <TextBlock Width="20"/>
+            <Button Margin="10" Height="25" x:Name="btnRegister" Content="Register" HorizontalContentAlignment="Center" BorderThickness="0" Width="100" Click="btnOK_Click"/>
+            <Button Margin="10" Height="25"  x:Name="btnLogin" Content="LogIn" HorizontalContentAlignment="Center" BorderThickness="0" Width="100" Click="btnLogin_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

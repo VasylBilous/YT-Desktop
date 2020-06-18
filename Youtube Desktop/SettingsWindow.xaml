@@ -1,0 +1,44 @@
+﻿<Window x:Class="Youtube_Desktop.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Youtube_Desktop" xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       Title="Youbute" Height="350" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <icons:PackIconSimpleIcons  Kind="YouTubeTv"  Width="50" Height="50"  HorizontalAlignment="Center"  Foreground="Red"/>
+        <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}"  Margin="5" Grid.Row="1" HorizontalAlignment="Center" Text="Login:"/>
+        <TextBox IsReadOnly="True" Style="{StaticResource MaterialDesignComboBoxEditableTextBox}"  Margin="5" Grid.Row="2" 
+                 x:Name="tbLogin" HorizontalContentAlignment="Center"  
+               Text="{Binding User.Login, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}"  Margin="5" Grid.Row="3" HorizontalAlignment="Center" Text="Telegram Token:"/>
+        <TextBox Style="{StaticResource MaterialDesignComboBoxEditableTextBox}"  Margin="5" Grid.Row="4" 
+                 x:Name="tbToken" HorizontalContentAlignment="Center" Text="{Binding User.Token}"/>
+        <TextBlock x:Name="tbPass" Visibility="Collapsed"  Style="{StaticResource MaterialDesignBody1TextBlock}"  Margin="5" Grid.Row="5" HorizontalAlignment="Center" Text="New Password:"/>
+        <PasswordBox Visibility="Collapsed" PasswordChar="*"  Margin="5" Grid.Row="6" x:Name="tbPassword" HorizontalContentAlignment="Center" 
+                     Grid.ColumnSpan="2"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="7">
+            <Button Margin="10" Height="28" Width="40" x:Name="btnBack" Content="back" VerticalAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0"  Click="btnBack_Click"/>
+            <Button Margin="10" Height="28" x:Name="btnReset" Content="Reset Password" VerticalAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Width="140" Click="btnReset_Click"/>
+            <Button Margin="10" Height="28"  x:Name="btnSave" Content="Save Changes" VerticalAlignment="Center"  HorizontalContentAlignment="Center" BorderThickness="0" Width="140" Click="btnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
